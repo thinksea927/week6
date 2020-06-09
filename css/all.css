@@ -12536,8 +12536,6 @@ footer span {
   }
   .bannerImg {
     height: 800px;
-    -webkit-transform: translateX(15px);
-            transform: translateX(15px);
   }
 }
 
