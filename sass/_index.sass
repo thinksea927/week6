@@ -1,0 +1,110 @@
+.navbar-dark
+    .navbar-nav
+        .nav-link
+            color: $white
+            &:hover, &:focus
+                color: $accent
+                font-weight: bold
+    .material-icons
+        color: $white
+
+.fullWidthMenu
+    position: absolute
+    height: 100vh
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: 1
+    transition: all 1s
+    transform: translateX(-100%)
+
+.fullWidthMenu.show
+    transform: translateX(0)
+
+
+
+.btn.h4
+    font-size: 24px
+    
+.title
+    color: $white
+
+.titleSub
+    color: $white-light
+
+.bannerImg
+    background-image: url("../img/index-1.jpg")
+    position: absolute
+    height: 640px
+    top: -78px
+    bottom: 0
+    // left: 0
+    // right: 0
+    z-index: -11
+    &:after
+        content: ""
+        position: absolute
+        display: block
+        top: -78px
+        bottom: 0
+        right: 0
+        left: 0
+        background-color: rgba(0,0,0,0.3)
+
+
+.banner
+    height: calc( 640px - 60px )
+    padding-top: 128px
+    p.titleSub
+        margin-bottom: 108px
+    
+.profileImg
+    background-image: url("../img/index-5.jpg")
+    height: 400px
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+
+.slogan
+    width: 90%
+
+.swiper-container
+    .card
+        img
+            width: 240px
+            height: 240px
+.swiper-slide
+    width: 240px
+
+
+@media screen and ( min-width: 768px  )
+    header.index
+        .navbar
+            .navbar-brand
+                color: $white
+    .profileImg
+        .container
+            padding-left: 30px
+            padding-right: 30px
+    .slogan
+        width: 100%
+    .artDirector
+        padding-left: 31.6666%
+
+@media screen and ( min-width: 992px )
+    header.index
+        .navbar
+            .navbar-brand
+                color: $primary
+    .title
+        color: $primary
+    .titleSub
+        color: $dark
+    .banner
+        height: calc( 800px - 78px )
+        padding-top: 160px
+    .bannerImg
+        height: 800px
+        transform: translateX( 15px )

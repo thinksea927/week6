@@ -1,0 +1,31 @@
+.detailImg
+    background-image: url("../img/img-1.jpg")
+    height: 360px
+    z-index: -11
+.imgLabel
+    top: 16px
+    right: 16px
+.swiper-wrapper
+    .imgLabel
+        top: 8px
+        right: 8px
+
+.card
+    &:nth-child(1)
+        .cartImg
+            background-image: url("../img/img-1.jpg")
+            height: 96px
+            width: 96px
+
+@media screen and ( min-width: 768px )
+    .detailAddToCart
+        transform: translateX( -65px - 15px )
+    .imgLabel
+        top: 24px
+        left: 24px
+    .swiper-wrapper
+        .imgLabel
+            top: 16px
+            right: 16px
+            left: auto
+    

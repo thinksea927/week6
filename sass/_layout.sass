@@ -1,0 +1,66 @@
+.navbar
+    padding: 0
+    // padding-top: 7px
+    // padding-bottom: 7px
+    
+.logo
+    font-family: "Raleway"
+    text-transform: capitalize
+    font-size: 24px
+
+.navbar-toggler
+    border: none
+    padding: 0
+
+.navbar-light
+    .navbar-nav
+        .nav-link
+            color: $primary
+            font-weight: bold
+            &:hover, &:focus
+                color: $accent
+    .material-icons
+        color: $primary
+
+
+
+.footerImg
+    background-image: url("../img/footer.jpg")
+    height: 224px
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    z-index: -11
+    &:after
+        content: ""
+        position: absolute
+        display: block
+        top: 0
+        bottom: 0
+        right: 0
+        left: 0
+        background-color: rgba(0,0,0,0.3)
+footer
+    input[type="text"]
+        background-color: transparent
+        &::placeholder
+            color: #FFFFFF99
+    .form-control
+        padding-top: 27px
+        padding-bottom: 27px
+        border: 1px solid #FFFFFF99
+        border-right: none
+    li
+        a
+            color: #FFFFFFDE
+    span
+        color: #FFFFFF99
+    // .container
+    //     padding-left: 0
+    //     padding-right: 0
+
+@media screen and ( min-width: 768px  )
+    .footerImg
+        height: 400px
+    

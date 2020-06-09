@@ -1,0 +1,46 @@
+// .product
+//     li
+//         &:hover
+//             a
+//                 .text-dark
+//                     color: $accent 
+.product
+    li
+        &:hover
+            span.text-dark, sup.text-dark
+                    color: $accent !important
+    
+.card-columns
+        column-count: 2
+.card-columns
+        .card
+            img
+                height: 161px
+                // max-height: 161px
+                object-fit: cover
+                &:hover
+                    // filter: drop-shadow(1px 1px 8px rgba(0,0,0,0.5))
+                    filter: sepia( 30% )
+
+.page-link
+    border: none
+.page-link.active
+    position: relative
+
+    &::after
+        content: ""
+        display: block
+        position: absolute
+        bottom: 5px
+        width: 15px
+        height: 1px
+        background-color: $accent
+
+
+@media screen and ( min-width: 768px  )
+    
+    .card-columns
+        column-count: 3
+        .card
+            img
+                height: auto
